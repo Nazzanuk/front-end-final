@@ -94,7 +94,7 @@ Do this by creating an mLabs account or using an existing one.
 ### - Connect to your database and confirm that it works.
 
 ---
-## 8. Create some routes to add and view ainme collections
+## 8. Create some routes to add and view anime collections
 
 for example:
 
