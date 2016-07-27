@@ -28,9 +28,9 @@ This should be all you need to start the server at `http://localhost:4000`.
 ---
 ## 2. Add a search screen
 
-**NOTE: For now ignore the server directory completely!**
+**NOTE: For now ignore the `server` directory completely!**
 
-Add another screen to the application which has a similar structure to the About page. Call it **Search**.
+### - Add another screen to the application which has a similar structure to the About page. Call it **Search**.
 
 This screen should appear in the top navigation alongside `Home` and `About`.
 
@@ -40,4 +40,31 @@ You will need to make changes to:
 - `routes.es6`
 
 ---
-## 3. 
+## 3. Search for anime
+
+### - Add an input to this screen
+
+This input will be the query in a search made to `https://jsonp.afeld.me/?url=http://hummingbird.me/api/v1/search/anime?query=YOUR_QUERY`.
+
+### - For each result, print the `cover_image` returned in the json.
+
+Use the `API` service and the `API.load` function to make a request
+
+---
+## 4. Make the results sexy
+
+### - Create a directive that will take an anime result object and present it well with the following information:
+
+- title
+- url
+- cover_image
+- synopsis
+- show_type
+- age_rating
+
+### - Use this directive when showing each of your results.
+
+---
+## 5. Favourites
+
+Create

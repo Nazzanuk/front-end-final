@@ -1,6 +1,6 @@
-app.service('API', () => {
+app.service('API', ($http) => {
 
-    var API = '';
+    var API = 'https://jsonp.afeld.me/?url=http://hummingbird.me/api/v1/';
 
     var remove = (collection, _id) => {
         console.info('saving', collection, params);
