@@ -1,27 +1,30 @@
 app.service('API', ($http) => {
 
-    var API = 'https://jsonp.afeld.me/?url=http://hummingbird.me/api/v1/';
+    var APIS = {
+        anime:'https://jsonp.afeld.me/?url=http://hummingbird.me/api/v1/',
+        local:'/api'
+    };
 
-    var remove = (collection, _id) => {
-        console.info('saving', collection, params);
-        return $http.delete(`${API}/${collection}/${_id}`).then((response) => {
+    var remove = (api, url, _id) => {
+        console.info('saving', url, params);
+        return $http.delete(`${APIS[api]}/${url}/${_id}`).then((response) => {
             console.info('response', response);
             return response.data;
         }, console.error);
     };
 
-    var insert = (collection, data) => {
+    var insert = (api, url, data) => {
         console.info('inserting', data);
-        return $http.post(`${API}/${collection}`, data).then((response) => {
+        return $http.post(`${APIS[api]}/${url}`, data).then((response) => {
             console.info('response', response);
             return response.data;
         }, console.error);
     };
 
-    var load = (collection, params) => {
-        console.info('loading', collection, {params, json: true});
-        return $http.get(`${API}/${collection}`).then((response) => {
-            console.info('load ' + collection + ' response', response);
+    var load = (api, url, params) => {
+        console.info('loading', url, {params, json: true});
+        return $http.get(`${APIS[api]}/${url}`).then((response) => {
+            console.info('load ' + url + ' response', response);
             return response.data
         }, console.error);
     };

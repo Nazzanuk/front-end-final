@@ -73,9 +73,9 @@ This service will allow you to pass information between controllers and directiv
 
 ### - Create the ability to add a search result to your favourites
 
-This should be done by storing and exposing the data in your service
+This should be done by storing and exposing the data in your service.
 
-
+Favourites should appear in the same format as the search results.
 
 ---
 ## 6. Server interaction
@@ -86,10 +86,32 @@ Run `nodemon server.js` in the `server` folder after first navigating into that 
 
 Your server should now be running at `http://localhost:4000`, even though it will have some errors for now.
 
-### - Set up your database connection
+---
+## 7. Set up your database connection
 
 Do this by creating an mLabs account or using an existing one.
 
-Connect to your database and confirm that it works.
+### - Connect to your database and confirm that it works.
 
-### - 
+---
+## 8. Create some routes to add and view ainme collections
+
+for example:
+
+```javascript
+app.get('/anime', Get.anime);
+app.post('/anime', Post.anime);
+```
+---
+## 9. Create a schema in your database to hold a anime item
+
+Create a dummy item in the back end to make sure it works.
+
+---
+## 10. Link it all up together
+
+Your app should now store and retrieve favourites from the node database directly.
+
+---
+## 11. Bonus
+### - Add a delete button in the favourites
