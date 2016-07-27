@@ -99,8 +99,8 @@ Do this by creating an mLabs account or using an existing one.
 for example:
 
 ```javascript
-app.get('/anime', Get.anime);
-app.post('/anime', Post.anime);
+app.get('/api/anime', Get.anime);
+app.post('/api/anime', Post.anime);
 ```
 ---
 ## 9. Create a schema in your database to for an anime item
