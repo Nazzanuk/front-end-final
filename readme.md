@@ -4,7 +4,7 @@
 ### - Create a fresh directory in your system, and clone this repo.
 
 ```bash
-git clone https://github.com/Nazzanuk/front-end-final.git
+git clone https://github.com/Nazzanuk/front-end-final.git .
 ```    
 
 ### - From the root directory of your repo, get the project started.
@@ -27,4 +27,17 @@ This should be all you need to start the server at `http://localhost:4000`.
 
 ---
 ## 2. Add a search screen
-Add another screen to the application which has a similar structure to the About page. Call it *Search*.
+
+**NOTE: For now ignore the server directory completely!**
+
+Add another screen to the application which has a similar structure to the About page. Call it **Search**.
+
+This screen should appear in the top navigation alongside `Home` and `About`.
+
+You will need to make changes to:
+- `screens` directory
+- `menu.es6`
+- `routes.es6`
+
+---
+## 3. 
