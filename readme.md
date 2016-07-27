@@ -12,7 +12,7 @@ git clone https://github.com/Nazzanuk/front-end-final.git .
 You may need to install the following globally as prerequisites:
 
 ```bash
-npm install -g bower gulp
+npm install -g bower gulp nodemon
 ```    
 
 Run the following in your terminal at the root of the repo into it. 
@@ -22,8 +22,6 @@ npm install # This uses the package.json to automatically fetch the correct depe
 bower install # This uses the bower.json to automatically fetch the correct front-end dependencies.
 gulp dev # This starts a gulp task to automatically generate the release directory.
 ```
-
-This should be all you need to start the server at `http://localhost:4000`.
 
 ---
 ## 2. Add a search screen
@@ -67,4 +65,29 @@ Use the `API` service and the `API.load` function to make a request
 ---
 ## 5. Favourites
 
-Create
+### - Create another screen called Favourites
+
+### - Create a service called `favourites`
+
+This service will allow you to pass information between controllers and directives.
+
+### - Create the ability to add a search result to your favourites
+
+This should be done by storing and exposing the data in your service
+
+--
+## 6. Server interaction
+
+### - Start the server
+
+Run `nodemon server.js` in the `server` folder after first navigating into that directory.
+
+Your server should now be running at `http://localhost:4000`, even though it will have some errors for now.
+
+### - Set up your database connection
+
+Do this by creating an mLabs account or using an existing one.
+
+Connect to your database and confirm that it works.
+
+### - 
