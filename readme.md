@@ -1,14 +1,27 @@
-Run the following in your terminal at the root of the repo. 
+# Part 10 - Building an app
+---
+## 1. Get up and running
+### Create a fresh directory in your system, and clone this repo.
 
-```bash
-npm install
-bower install
-gulp dev
-```
-
-This should be all you need to start the server at http://localhost:4000.
+### From the root directory of your repo, get the project started
 
 You may need to install the following globally as prerequisites:
 
-`npm install -g forever bower gulp`   
+```bash
+npm install -g forever bower gulp
+```    
 
+Run the following in your terminal at the root of the repo. 
+
+```bash
+npm install # This uses the package.json to automatically fetch the correct dependencies
+bower install # This uses the bower.json to automatically fetch the correct front-end dependencies
+gulp dev # This starts a gulp task to automatically generate the release directory
+```
+
+This should be all you need to start the server at `http://localhost:4000`.
+
+---
+## 1. 
+### Add a search screen
+Add another screen to the application which has a similar structure to the About page. Call it *Search*.
