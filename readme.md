@@ -75,7 +75,9 @@ This service will allow you to pass information between controllers and directiv
 
 This should be done by storing and exposing the data in your service
 
---
+
+
+---
 ## 6. Server interaction
 
 ### - Start the server
