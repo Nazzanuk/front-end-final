@@ -2,7 +2,7 @@ app.service('API', ($http) => {
 
     var APIS = {
         anime:'https://jsonp.afeld.me/?url=http://hummingbird.me/api/v1/',
-        local:'/api'
+        local:'/api/'
     };
 
     var remove = (api, url, _id) => {
