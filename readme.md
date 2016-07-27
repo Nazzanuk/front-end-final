@@ -103,7 +103,7 @@ app.get('/anime', Get.anime);
 app.post('/anime', Post.anime);
 ```
 ---
-## 9. Create a schema in your database to hold a anime item
+## 9. Create a schema in your database to for an anime item
 
 Create a dummy item in the back end to make sure it works.
 
@@ -114,4 +114,4 @@ Your app should now store and retrieve favourites from the node database directl
 
 ---
 ## 11. Bonus
-### - Add a delete button in the favourites
+### - Add a delete button in the favourites to remove a result
