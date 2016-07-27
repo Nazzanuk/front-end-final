@@ -1,0 +1,9 @@
+<script type="text/ng-template" id="hero.html">
+    <div class="hero" ng-class="{small:hero.small}">
+        <div class="hero-banner" style="background-image: url('{{hero.img}}');height:{{hero.getHeight()}}">
+            <div class="banner-overlay">
+                {{hero.heading}}
+            </div>
+        </div>
+    </div>
+</script>

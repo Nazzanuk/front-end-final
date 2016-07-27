@@ -1,0 +1,53 @@
+hero-item {
+  .hero {
+    //margin-top: 30px;
+    .hero-banner {
+      height: 300px;
+      position: relative;
+      background: #eee;
+      background-size: cover;
+      background-position: center;
+      font-family: 'Shojumaru', cursive;
+      font-family: 'Bangers', cursive;
+      font-family: 'Chewy', cursive;
+      letter-spacing: 3px;
+
+      .banner-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+
+        display: flex;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        color: white;
+        transition: .6s;
+
+        font-size: 60px;
+        font-weight: 100;
+      }
+    }
+
+    &.small {
+      .hero-banner {
+        .banner-overlay {
+          font-size: 40px;
+        }
+
+        &:hover {
+
+          .banner-overlay {
+            background: rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+
+    }
+  }
+}
